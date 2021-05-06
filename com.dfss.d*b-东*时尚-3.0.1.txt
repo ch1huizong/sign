@@ -1,0 +1,17 @@
+app:
+com.dfss.d*b
+东*时尚
+3.0.1
+
+关键java类:
+com.dfss.dfssclub.pay.wxpay.MD5
+
+逆向简析:
+ApiChecksum:
+例子：
+     ==>> headers['A*y'] + headers['A*d'] + headers['C*n'] + headers['D*d'] + headers['N*r'] + headers['T*p'] 为temp1
+     ==>> temp1 + salt 值为temp2
+     ==>> md5 hexdigest
+salt值为19*********12
+
+关键的key值都**隐去了，只是交流学习。

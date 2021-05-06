@@ -1,0 +1,16 @@
+app:
+com.android.b*e.activity
+本*生活
+5.7.1
+
+关键java类:
+com.android.benlai.request.basic.c
+
+逆向简析:
+sign:
+例子：{"a": 1, "b": 2}
+     ==>> 表单数据排序  a1b2 值为temp1
+     ==>> 右边加上 be**** 值为temp2
+     ==>> md5 hexdigest upper
+
+关键的key值都**隐去了，只是交流学习。

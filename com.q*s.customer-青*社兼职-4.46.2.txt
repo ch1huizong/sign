@@ -1,0 +1,17 @@
+app:
+com.q*s.customer
+青*社兼职
+4.46.2
+
+关键java类:
+c.w.b.w.e0
+
+逆向简析:
+sign:
+例子：
+     ==>> post form数据为data
+     ==>> salt + data['t***p'] + data['v***n'] 值为temp1
+     ==>> md5 hexdigest
+salt值为QT******ER
+
+关键的key值都**隐去了，只是交流学习。

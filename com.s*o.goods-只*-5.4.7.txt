@@ -1,0 +1,16 @@
+app:
+com.s*o.goods
+只*
+5.4.7
+
+关键java类:
+com.sharetwo.goods.e.v
+
+逆向简析:
+sn:
+例子：{"a": 1, "b":2}
+     ==>> 表单数据排序  a=1&b=2 值为temp1
+     ==>> 右边加上 &t****=*****6 值为temp2
+     ==>> md5 hexdigest
+
+关键的key值都**隐去了，只是交流学习。

@@ -1,0 +1,17 @@
+app:
+com.c*e.cehomebbs
+*甲
+3.9.9.0
+
+关键java类:
+com.cehome.tiebaobei.searchlist.utils.AesUtil
+
+逆向简析:
+token:
+例子：
+     ==>> salt + headers["visitorid"] salt值为 c*****@
+     ==>> 使用aes ecb解密，key值为 j3**********fO
+     ==>> base64.b64encode
+
+
+关键的key值都**隐去了，只是交流学习。

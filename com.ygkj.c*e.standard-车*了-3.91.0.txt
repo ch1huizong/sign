@@ -1,0 +1,19 @@
+app:
+com.ygkj.c*e.standard
+车*了
+3.91.0
+
+关键java类:
+dev.xesam.chelaile.sdk.k.b.a.b
+dev.xesam.chelaile.sdk.f.o
+dev.xesam.chelaile.sdk.k.b.a.a
+
+逆向简析:
+cryptoSignStr:
+例子：temp = 'action=%s&udid=%s&timeStamp=%s' % ('/bus/line!encryptedTsfRealInfos.action', '******', '1588236490093')
+   ==>> hashlib.md5(temp + salt).hexdigest() salt为 ***ihrn****
+
+请求的response加密了，解密过程如下：
+使用aes ecb解密，key值为 445**************7F
+
+关键的key值都**隐去了，只是交流学习。

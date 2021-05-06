@@ -1,0 +1,15 @@
+app:
+com.j*n.customer
+兼*侠
+1.5.3
+
+关键java类:
+com.qts.common.util.ab
+
+逆向简析:
+sign:
+例子：表单数据为data, 其中的三个字段值相加
+     ==>> data['ap**ey'] + data['ti**mp'] + data['ve**on']
+     ==>> md5 hexdigest
+
+关键的key值都**隐去了，只是交流学习。

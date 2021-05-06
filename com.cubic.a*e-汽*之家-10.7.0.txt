@@ -1,0 +1,19 @@
+app:
+com.cubic.a*e
+汽*之家
+10.7.0
+
+关键java类:
+com.autohome.mainlib.common.util.SignHelper
+
+关键so:
+libblackBox.so 0x17E10
+
+逆向简析:
+_sign:
+例子：{"a": 1, "b":2}
+     ==>> 表单数据排序 去除& a=1b=2 值为temp1
+     ==>> 左右两边加上salt，并且md5 hashlib.md5('%s%s%s' % (salt, temp, salt))
+          salt值为 @7****@$
+
+关键的key值都**隐去了，只是交流学习。

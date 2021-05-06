@@ -1,0 +1,18 @@
+app:
+com.d*n.android
+北*钱快报
+10.6.8_05
+
+关键java类:
+com.mb.library.utils.h.a
+
+逆向简析:
+DMAuthorization:
+例子：{"a": 1, "b":2}
+     ==>> post data 进行dump '{"a":1,"b":2}' 为temp1
+     ==>> salt1 + temp1 + salt2 值为temp2
+     ==>> md5 hexdigest
+salt1值为d**l
+salt2值为m**n
+
+关键的key值都**隐去了，只是交流学习。

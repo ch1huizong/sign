@@ -1,0 +1,16 @@
+app:
+com.xiachufang
+下厨房
+7.4.0
+
+关键java类:
+com.xiachufang.utils.Md5Util
+
+逆向简析:
+api_sign:
+例子：{"a": 1, "b":2}
+     ==>> 表单数据排序 去除& a=1b=2 值为temp1
+     ==>> 右边加上salt，并且md5 hashlib.md5(temp + salt)
+          salt值特别特别特别特别长，估计开发人员对"长"颇有信仰，其值为11117973*****5858141b
+
+关键的key值都**隐去了，只是交流学习。

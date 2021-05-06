@@ -1,0 +1,15 @@
+app:
+com.j*u.haruki
+简*
+4.24.1
+
+关键java类:
+jianshu.foundation.util.q
+
+逆向简析:
+X-Auth-1:
+例子：
+     ==>> salt + header['X****tamp']  salt值为2a******14
+     ==>> md5 hexdigest
+
+关键的key值都**隐去了，只是交流学习。

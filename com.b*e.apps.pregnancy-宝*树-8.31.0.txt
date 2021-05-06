@@ -1,0 +1,19 @@
+app:
+com.b*e.apps.pregnancy
+宝*树孕育
+8.31.0
+
+关键java类:
+com.meitun.mama.util.bt.a
+
+逆向简析:
+signature:
+例子：{"a": 1, "b":2}
+     ==>> 添加header的timestamp到dict里 {"a": 1, "b":2, "timestamp":3}
+     ==>> 表单数据排序  a=1b=2timestamp=3 值为temp1
+     ==>> temp1 + salt 值为temp2
+     ==>> md5 hexdigest
+
+salt值为ia******()
+
+关键的key值都**隐去了，只是交流学习。

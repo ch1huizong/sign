@@ -1,0 +1,19 @@
+app:
+com.g*i.android.haoche_c
+瓜*二手车
+7.2.6.0
+
+关键java类:
+com.guazi.android.network.Utils
+
+逆向简析:
+sign:
+例子：{"a": 1, "b":2}
+ ==>> 表单数据排序 去除& a=1b=2 值为temp1
+ ==>> 去除空格 re.sub('\s', '', temp1) 为temp1
+ ==>> hashlib.md5(temp1 + salt).hexdigest() 为temp2
+ ==>> hashlib.md5(temp2 + salt).hexdigest()
+ salt为 d9******************be
+
+
+关键的key值都**隐去了，只是交流学习。

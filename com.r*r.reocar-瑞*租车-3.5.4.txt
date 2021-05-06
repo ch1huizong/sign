@@ -1,0 +1,16 @@
+app:
+com.r*r.reocar
+瑞*租车
+3.5.4
+
+关键java类:
+com.reocar.reocar.utils.MD5
+
+逆向简析:
+sign:
+例子：获取header里的timestamp字段 为ts
+     ==>> salt + ts + salt 值为temp1
+     ==>> md5 hexdigest
+     salt值为62*********49
+
+关键的key值都**隐去了，只是交流学习。

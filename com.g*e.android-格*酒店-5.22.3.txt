@@ -1,0 +1,16 @@
+app:
+com.g*e.android
+格*酒店
+5.22.3
+
+关键java类:
+com.greentree.android.common.DesEncrypt
+
+逆向简析:
+这个app没有参数加密，但response中的价格进行了加密:
+例子：价格：jYCc2VkIFtE=
+     ==>> base64 decode
+     ==>> des的ecb进行解密 key值为bytes.fromhex('47************31')
+     ==>> 价格结果为 169 ☑️
+
+关键的key值都**隐去了，只是交流学习。

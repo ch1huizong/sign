@@ -1,0 +1,17 @@
+app:
+com.czb.c*g
+*油sign参数
+5.4.4
+
+关键java类:
+com.czb.chezhubang.base.http.interceptor.AuthIntercepter
+
+逆向简析:
+sign:
+例子：{"a": 1, "b":2}
+     ==>> 表单数据排序  a1b2 值为temp1
+     ==>> salt + temp1 + salt 值为temp2
+     ==>> md5 hexdigest
+salt值为26*********04
+
+关键的key值都**隐去了，只是交流学习。

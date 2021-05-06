@@ -1,0 +1,17 @@
+app:
+com.c*u.blessonstu
+101*导
+1.8.5
+
+关键java类:
+com.chinaedu.blessonstu.utils.SHA1Utils
+
+逆向简析:
+signature:
+例子：{"a": 1, "b":2}
+     ==>> 表单数据排序  a=1&b=2 值为temp1
+     ==>> temp1 + salt 值为temp2
+     ==>> sha1 hexdigest upper
+salt值为00*************817
+
+关键的key值都**隐去了，只是交流学习。

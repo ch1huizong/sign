@@ -1,0 +1,16 @@
+app:
+com.d*n.frodo
+*瓣 _sig参数
+6.34.0
+
+关键java类:
+com.douban.frodo.utils.crypto.HMACHash1
+
+逆向简析:
+_sig:
+例子：hmac.new(hmackey, quote('GET&/api/v2/movie/tag&1588351779'), digestmod=hashlib.sha1)
+hmackey为 bf7d*******e6f7
+1588351779 为时间戳，需更新
+
+
+关键的key值都**隐去了，只是交流学习。

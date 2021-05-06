@@ -1,0 +1,16 @@
+app:
+com.d*i.news
+*球帝
+7.3.6
+
+关键java类:
+com.dongqiudi.core.http.f
+
+逆向简析:
+sign:
+例子：
+     ==>> salt + path + 'dongqiudi.com' + ts + 'dongqiudi.com' 为temp
+     ==>> base64.b64encode(hmac.new(key, temp, digestmod=hashlib.sha256).digest())
+    key为d*******m    salt为@FIKK************/97b
+
+关键的key值都**隐去了，只是交流学习。

@@ -1,0 +1,17 @@
+app:
+sina.mobile.t*g
+天*通
+6.40
+
+关键java类:
+com.weibo.tqt.m.r
+
+逆向简析:
+sign:
+例子：{"a": 1, "b":2}
+     ==>> 表单数据排序  a=1&b=2 值为temp1
+     ==>> temp1 + salt 值为temp2
+     ==>> md5 hexdigest
+salt值为cb**********88
+
+关键的key值都**隐去了，只是交流学习。

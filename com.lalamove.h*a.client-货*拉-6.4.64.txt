@@ -1,0 +1,17 @@
+app:
+com.l*e.huolala.client
+货*拉
+6.4.64
+
+关键java类:
+com.lalamove.huolala.utils.HllJni
+
+逆向简析:
+_sign:
+例子：{"a": 1, "b":2}
+     ==>> 表单数据排序  a1b2 值为temp1
+     ==>> salt + temp1 + salt 值为temp2
+     ==>> md5 hexdigest
+salt值为kZE**********GW87
+
+关键的key值都**隐去了，只是交流学习。

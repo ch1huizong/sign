@@ -1,0 +1,26 @@
+app:
+com.h*r.beibei
+贝*
+9.39.0
+
+关键java类:
+com.husor.beibei.utils.SecurityUtils
+
+关键so:
+libcommon-jni.so 0x20A4
+
+逆向简析:
+
+_abr_:
+例子：{"a": 1, "b":2}
+     ==>> 表单数据排序 a=1&b=2 值为temp1
+     ==>> '\n'.join(['01', 'GET', '', '/gateway/route?%s' % temp1, 表单参数里的timestamp]) 为hmac_data
+     ==>> hmac.new(hmac_key, hmac_data, digestmod=hashlib.sha1) hmac_key为Sc********1o
+
+sign:
+例子：{"a": 1, "b":2}
+      ==>>表单数据排序  a1b2
+      ==>>左右都加上salt，值为 L39********0ef  '%s%s%s' % (salt, a1b2, salt)
+      ==>>md5这个值
+
+关键的key值都**隐去了，只是交流学习。
